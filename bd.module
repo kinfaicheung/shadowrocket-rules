@@ -1,0 +1,11 @@
+﻿#!name=百度搜索
+#!desc=百度搜索
+#!homepage=https://whatshub.top
+#!author=
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/Baidu.png
+
+[Script]
+百度搜索=type=http-response,pattern=^https?:\/\/(www|m)\.baidu\.com\/?($|\?(from=\w{8,9}|tn=&from=)),requires-body=1,script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/baiduindex.js
+
+[MITM]
+hostname = %APPEND% m.baidu.com,www.baidu.com
